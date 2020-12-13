@@ -31,7 +31,8 @@ namespace AoC2020
             foreach (string line in lines)
             {
                 int number = int.Parse(line);
-                if (number > max) max = number;
+                if (number > max)
+                    max = number;
             }
             Console.WriteLine(max);
         }
