@@ -33,7 +33,29 @@ namespace AoC2020
 
         public static void Part2()
         {
-            var lines = File.ReadAllLines(@"../../../input/0.txt");
+            var lines = File.ReadAllLines(@"../../../input/2.txt");
+            int validPassports = 0;
+
+            foreach (string line in lines)
+            {
+                string[] data = line.Split(" ");
+                string[] range = data[0].Split("-");
+                int low = int.Parse(range[0]);
+                int high = int.Parse(range[1]);
+                char letter = data[1].ToCharArray()[0];
+                char[] password = data[2].ToCharArray();
+                int letterCount = 0;
+                if (password[low - 1] == letter)
+                    letterCount++;
+                if (password[high - 1] == letter)
+                    letterCount++;
+                if (letterCount == 1)
+                {
+                    validPassports++;
+                }
+            }
+
+            Console.WriteLine(validPassports);
         }
     }
 }
