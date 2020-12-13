@@ -12,7 +12,7 @@ namespace AoC2020
          */
         public static void Part1()
         {
-            var lines = File.ReadAllLines(@"..\..\..\input\0.txt");
+            var lines = File.ReadAllLines(@"../../../input/0.txt");
             int sum = 0;
             foreach (string line in lines)
             {
@@ -26,7 +26,7 @@ namespace AoC2020
          */
         public static void Part2()
         {
-            var lines = File.ReadAllLines(@"..\..\..\input\0.txt");
+            var lines = File.ReadAllLines(@"../../../input/0.txt");
             int max = int.MinValue;
             foreach (string line in lines)
             {
