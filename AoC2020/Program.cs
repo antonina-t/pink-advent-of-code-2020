@@ -6,8 +6,8 @@ namespace AoC2020
     {
         static void Main(string[] args)
         {
-            Task0.Part1();
-            Task0.Part2();
+            Task1.Part1();
+            Task1.Part2();
         }
     }
 }
